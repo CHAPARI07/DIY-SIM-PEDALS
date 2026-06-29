@@ -2,9 +2,8 @@
 
 These are my pedals for my racing setup, which I'll be using on my personl gaming setup. I didn't made other parts like "stearing", "gear" yet but I'm planing to make 'em!! But for now I'm realley exited to build this in irl!!
 
-## BOM
 
-## 📦 Bill of Materials (BOM)
+##  Bill of Materials (BOM)
 
 | Item | Purpose | Quantity | Total Cost (USD) | Purchase Link | Distributor |
 |------|---------|:--------:|:----------------:|---------------|-------------|
@@ -16,5 +15,56 @@ These are my pedals for my racing setup, which I'll be using on my personl gamin
 | Filament for 3D Printer | 3D Printing | 1 | $7.00 | https://amzn.in/d/0eveRcwI | Amazon |
 | Potentiometers | Controlling accelerator, brake, and clutch | 3 | $8.00 | https://amzn.in/d/0eveRcwI | Amazon |
 
-### 💰 Total Estimated Cost
+###  Total Estimated Cost
 **$45.50 USD**
+
+
+## Features
+
+-Highly precise pedals.
+
+-Just plugin & play!!
+
+-Coustom DIY
+
+-Presure sensetive springs
+
+## Wiring Digram
+
+```text
+                     ESP32
+
+                 +-------------+
+                 |             |
+3.3V ------------+-------------+-------------------+
+                 |             |                   |
+                 |             |                   |
+                POT 1         POT 2              POT 3
+             (Accelerator)   (Brake)           (Clutch)
+
+ VCC ---------- 3.3V -------- 3.3V ----------- 3.3V
+ GND ---------- GND --------- GND ------------ GND
+ SIG ---------- GPIO34 ------ GPIO35 --------- GPIO32
+
+                 +-------------+
+                 |    ESP32    |
+                 +-------------+
+```
+
+### Potentiometer Pinout
+
+```text
+          Front View
+
+      +-------------------+
+      |                   |
+      |   Potentiometer   |
+      |                   |
+      +-------------------+
+
+      Left     Middle      Right
+      GND      SIGNAL       3.3V
+```
+
+
+# Enjoy XD
